@@ -70,35 +70,42 @@
 					<div class="card-body">
 						<h3 class="card-title">메뉴 편집</h3>
 
-						<p class="card-text">카테고리를 수정,추가,삭제할 수 있고 우선순위를 설정할 수 있다. 또한 해당 카테고리에 해당하는 메뉴를 수정할 수 있다</p>
+						<p class="card-text">메뉴의 노출/비노출과 우선순위를 설정하고 메뉴를 수정, 추가, 삭제할 수 있다</p>
 						<span class="text-warning"></span>
 					</div>
 				</div>
 				<p></p><p></p><p></p><p></p><p></p><p></p>
 				<!-- /.card -->
-				<button type="button"  class="btn btn-success btn-lg">수정</button>
-				<button type="button"  class="btn btn-success btn-lg">추가</button>
+				<button type="button"  class="btn btn-success btn-lg">메뉴 추가</button>
 				<p></p><p></p><p></p><p></p><p></p><p></p>
+				<form>
 				<table class="table">
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>카테고리</th>
+							<th>메뉴명</th>
 							<th>우선순위</th>
-							<th>메뉴 수</th>
-							<th>메뉴 수정</th>
-							<th>카테고리 삭제</th>
-						
-
+							<th>우선순위 수정</th>
+							<th>노출/비노출</th>
+							<th>노출변경</th>
+							<th>수정</th>
+							<th>삭제</th>
+							
+					
 						</tr>
 					</thead>
 					<tbody>
-						<tr class="coffee">
+						<tr>
 							<td>1</td>
-							<td>커피</td>
-							<td>1</td>
-							<td>2</td>
-
+							<td>카페라떼</td>
+							<td><input type="text" value="1" style="width:50px;"></td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>노출</td>
+							<td>
+								<button type="button">변경</button>
+							</td>
 							<td>
 								<button type="button">수정</button>
 							</td>
@@ -106,11 +113,17 @@
 								<button type="button">삭제</button>
 							</td>
 						</tr>
-						<tr class="bubbleTea">
+						<tr>
 							<td>2</td>
-							<td>버블티</td>
-							<td>4</td>
-							<td>2</td>
+							<td>아메리카노</td>
+							<td><input type="text" value="4" style="width:50px;"></td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>노출</td>
+							<td>
+								<button type="button">변경</button>
+							</td>
 							<td>
 								<button type="button">수정</button>
 							</td>
@@ -120,11 +133,37 @@
 
 
 						</tr>
-						<tr class="flatccino">
+						<tr>
 							<td>3</td>
-							<td>플랫치노</td>
-							<td>3</td>
+							<td>캬라멜 마끼아또</td>
+							<td><input type="text" value="2" style="width:50px;"></td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>노출</td>
+							<td>
+								<button type="button">변경</button>
+							</td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>
+								<button type="button">삭제</button>
+							</td>
+	
+
+						</tr>
+						<tr>
 							<td>4</td>
+							<td>민트모카</td>
+							<td><input type="text" value="2" style="width:50px;"></td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>비노출</td>
+							<td>
+								<button type="button">변경</button>
+							</td>
 							<td>
 								<button type="button">수정</button>
 							</td>
@@ -134,26 +173,17 @@
 
 
 						</tr>
-						<tr class="ade">
-							<td>4</td>
-							<td>에이드</td>
-							<td>2</td>
-							<td>3</td>
-							<td>
-								<button type="button">수정</button>
-							</td>
-							<td>
-								<button type="button">삭제</button>
-							</td>
-
-
-						</tr>
-						
-						<tr class="bakery">
+						<tr class>
 							<td>5</td>
-							<td>베이커리</td>
-							<td>5</td>
-							<td>7</td>
+							<td>카푸치노</td>
+							<td><input type="text" value="3" style="width:50px;"></td>
+							<td>
+								<button type="button">수정</button>
+							</td>
+							<td>노출</td>
+							<td>
+								<button type="button">변경</button>
+							</td>
 							<td>
 								<button type="button">수정</button>
 							</td>
@@ -165,6 +195,7 @@
 						</tr>
 					</tbody>
 				</table>
+				</form>
 
 			</div>
 		</div>
