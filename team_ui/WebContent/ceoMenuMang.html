@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>사장_메뉴관리</title>
+<meta content="" name="descriptison">
+<meta content="" name="keywords">
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/heroic-features.css" rel="stylesheet">
+
+<!-- 지언이 부트스트랩 적용 -->
+<!-- Favicons -->
+<link href="./Resources/assets/img/favicon.png" rel="icon">
+<link href="./Resources/assets/img/apple-touch-icon.png"
+	rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+	rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="./Resources/assets/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="./Resources/assets/vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<link href="./Resources/assets/vendor/ionicons/css/ionicons.min.css"
+	rel="stylesheet">
+<link href="./Resources/assets/vendor/venobox/venobox.css"
+	rel="stylesheet">
+<link
+	href="./Resources/assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+<link href="./Resources/assets/vendor/aos/aos.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+<link href="./Resources/assets/css/style.css" rel="stylesheet">
+
+<!-- =======================================================
+  * Template Name: Rapid - v2.2.0
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<style>
+
+/* 지언이 부트스트랩 스타일 적용 시작 */
+#hero {
+	background-image: url("./Resources/assets/img/white.png");
+	height: 200px;
+}
+
+#ddiv {
+	position: absolute;
+	left: 32%;
+	margin-top: 6%;
+}
+
+#noticefont {
+	text-align: left;
+	font-weight: 700;
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+}
+
+#noticediv {
+	margin-top: -15px;
+}
+
+#faq #faq-list a {
+	padding: 18px 0;
+	display: block;
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	line-height: 1;
+	font-weight: 400;
+	padding-right: 20px;
+}
+
+#subdiv {
+	margin-top: 5px;
+	background-color: gray;
+}
+
+#twodiv {
+	margin-top: 1%;
+	margin-left: 10%;
+}
+
+#services {
+	float: center;
+}
+
+#qna {
+	margin-top: 50px;
+}
+
+#boxes {
+	float: center;
+	text-align: center;
+	margin-left: 30%;
+}
+
+#services .box {
+	padding: 5px;
+	padding-top: 20px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	margin: -50px 3px 0px 3px;
+	background: #fff;
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	position: relative;
+}
+
+#footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #ffc107;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+}
+
+#footer .php-email-form button[type="submit"] {
+	background: #696592;
+	border: 0;
+	border-radius: 3px;
+	padding: 8px 30px;
+	color: #fff;
+	transition: 0.3s;
+}
+
+a {
+    color: black;
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #f89d00;
+	outline: none;
+	text-decoration: none;
+}
+.back-to-top {
+	background: #f89d00;
+}
+
+.main-nav .drop-down ul a:hover, .main-nav .drop-down ul .active>a,
+	.main-nav .drop-down ul li:hover>a {
+	color: rgb(248, 155, 0);
+}
+
+.main-nav a:hover, .main-nav .active>a, .main-nav li:hover>a {
+	color: rgb(248, 155, 0);
+	text-decoration: none;
+}
+
+#services .box:hover .title a {
+	color: rgb(248, 155, 0);
+}
+
+#footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #ffc107;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+	background: #f89d00;
+	color: #fff;
+}
+
+#footer .php-email-form button[type="submit"] {
+	background: #ffc107;
+	border: 0;
+	border-radius: 3px;
+	padding: 8px 30px;
+	color: #fff;
+	transition: 0.3s;
+}
+
+#footer .php-email-form button[type="submit"]:hover {
+	background: #f89d00;
+	cursor: pointer;
+}
+
+.section-bg {
+	background: #fff;
+}
+
+#footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #fff;
+}
+
+/* 지언이 부트스트랩 스타일 적용 끝 */
+
+#main {
+	margin-top: 100px;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+	background: #f89d00;
+	outline: 0;
+	border: 1px solid #f89d00;
+}
+
+.cafe_header {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 1px solid lightgray;
+	border-radius: 0.3rem;
+	padding: 20px;
+	background: #dee2e6;
+}
+
+
+.container {
+	overflow: hidden;
+}
+
+.contents {
+	float: left;
+	width: 65%;
+}
+
+.nav {
+	float: right;
+	width: 28%;
+	margin-left: 50px;
+}
+
+td {
+	padding: 5px;
+}
+
+#cafe_open_hours, #cafe_closing_hours {
+	width: 80px;
+}
+
+.cafe_hashtag_body, .cafe_menu_card, .cafe_menu_list{
+	padding: 20px;
+	border: 1px solid lightgray;
+	border-radius: 0.3rem;
+}
+
+.nav {
+	padding: 20px;
+	border: 1px solid #f89d00;
+	border-radius: 0.3rem;
+}
+
+.cafe_hashtag_body {
+	margin-bottom: 50px;
+}
+
+.hashtag {
+	text-align: center;
+	margin-top: 10px;
+	width: 130px;
+	border: 1px solid #f89d00;
+}
+
+.cafe_menu_card_contents {
+	display: flex;
+	flex-wrap: no-wrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.cafe_menu_card_item {
+	width: 200px;
+	height: 250px;
+	padding-right: 20px;
+	flex: 0 0 auto;
+}
+
+.cafe_menu_list {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.my-4 {
+	color:#f89d00;
+}
+.cafe_menu_list_contents {
+	height: 600px;
+	flex-wrap: no-wrap;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.cafe_menu_list_item {
+	display: flex;
+	padding: 10px;
+}
+
+.img-thumbnail {
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.cafe_menu_list_item_info {
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.cafe_shopcart {
+	width: 100%;
+}
+
+.cafe_shopcart_contents {
+	padding-top: 15px;
+	margin-bottom: 20px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	height: 270px;
+	flex-wrap: no-wrap;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.cafe_shopcart_item {
+	margin-bottom: 20px;
+}
+
+p.cafe_shopcart_cost {
+	color: gray;
+	display: inline;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.total_cost {
+	width: 68%;
+}
+
+.btn_order {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	width: 140px;
+	height: 40px;
+	background: #f6ae1a;
+	border: 1px solid #f6ae1a;
+	border-radius: 5px;
+}
+.btn_ok {
+	margin-top: 15px;
+	width: 130px;
+	height: 60px;
+	background: #f6ae1a;
+	border: 1px solid #f6ae1a;
+	border-radius: 5px;
+}
+
+.btn_order:hover, .btn_order:active, .btn_order:focus {
+	background: #f89d00;
+	border: 1px solid #f89d00;
+}
+.tab { white-space: pre; }
+
+.list-group{
+	border: 1px solid #f89d00;
+	border-radius: 0.3rem;
+}
+a.list-group-item.active{
+	background: #F6AE1A;
+	outline: none;
+	text-decoration: none;
+	border: 1px solid #F6AE1A;
+}
+
+
+</style>
+</head>
+
+<body>
+
+	<!-- ======= Header Section ======= -->
+	<header id="header" class="fixed-top header-transparent">
+		<div class="container d-flex align-items-center">
+			<h1 class="logo mr-auto">
+				<a href="ui01.html">우동CaRea</a>
+			</h1>
+			<!-- Uncomment below if you prefer to use an image logo -->
+			<!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+			<nav class="main-nav d-none d-lg-block">
+				<ul>
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">주문내역</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+			</nav>
+			<!-- .main-nav-->
+		</div>
+	</header>
+	<!-- End Header -->
+
+	  <main id="main">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-3">
+							<h1 class="my-4" >꽃이피움</h1>
+							<div class="list-group">
+								<a href="#" class="list-group-item active">메뉴 편집</a> 
+								<a href="#" class="list-group-item">옵션 편집</a>
+								<a href="#" class="list-group-item">인기메뉴 편집</a>		
+							</div>
+						</div>
+						
+
+						<div class="col-lg-9">
+
+							<div>
+								<table>			
+										<tr><td>
+											<img src="http://placehold.it/280x170" alt="">
+											<input type="button" class="btn_order" value="불러오기" />
+											
+											</td>
+											<hr>
+										</td></tr>
+										<tr><td>
+											메뉴 이름<span class="tab">&#9;</span><input type=text name="menu"><hr>
+							            
+							            </td></tr>
+							            <tr><td>
+							            	메뉴 가격<span class="tab">&#9;</span><input type=text name="price"><hr>
+							            </td></tr>
+							            <tr><td>
+							            	메뉴 설명<span class="tab">&#9;</span><input type=text name="ex"><hr>
+							            </td></tr>
+							            <tr><td>
+								            <h5>카테고리</h5>
+								            <input type = radio name="category" value="n1">커피&nbsp;&nbsp;<span class="tab">&#9;</span>
+								            <input type = radio name="category" value="n2">버블티&nbsp;<span class="tab">&#9;</span>
+								            <input type = radio name="category" value="n3">플랫치노&nbsp;&nbsp;<span class="tab">&#9;</span>
+								            <input type = radio name="category" value="n4">에이드&nbsp;<span class="tab">&#9;</span>
+								            <input type = radio name="category" value="n5">베이커리<span class="tab">&#9;</span>
+								            <hr>
+							            </td></tr>
+						      
+					            	</table>
+					
+							
+							</div>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<!-- /.card -->
+							<input type="button" class="btn_ok" value="메뉴 저장" />
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<form>
+								<table class="table">		<!-- 메뉴 추가일 경우 버튼만보이게 or null? -->
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>메뉴 옵션</th>
+											<th>옵션 선택 </th>
+
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>옵션 1</td>										
+											<td>
+												<input type = "checkbox" name ="selectedOption" />
+											</td>
+											
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>옵션 2</td>
+											<td>
+												<input type = "checkbox" name ="selectedOption" />
+											</td>
+														
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>옵션 3</td>
+											<td>
+												<input type = "checkbox" name ="selectedOption" />
+											</td>									
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>옵션 4</td>
+											<td>
+												<input type = "checkbox" name ="selectedOption" />
+											</td>
+											<td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>옵션 5</td>
+											<td>
+												<input type = "checkbox" name ="selectedOption" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<!-- /.card -->
+						
+							<input type="button" class="btn_ok" value="옵션 저장" />
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+
+
+		<!-- End F.A.Q Section -->
+
+</main>
+
+	<!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer" class="section-bg">
+		<div class="footer-top">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-6">
+
+						<div class="row">
+
+							<div class="col-sm-6">
+
+								<div class="footer-info">
+									<h3>우동CaRea</h3>
+									<p>우리 동네 Cafe Ready?</p>
+								</div>
+
+								<div class="footer-newsletter">
+									<h4>Our Information</h4>
+									<p>
+										대표자: 지혜로운 아이들<br>사업자등록번호: 000-00-00000<br> 성북구
+										동덕여자대학교 컴퓨터학과<br> <strong>고객만족센터:</strong> 0000-0000<br>
+										<strong>Email:</strong> info@example.com<br>
+									</p>
+								</div>
+
+							</div>
+
+							<div class="col-sm-6">
+								<div class="footer-links">
+									<h4>정보5</h4>
+									<p>
+										내용<br>
+									</p>
+								</div>
+
+								<div class="footer-links">
+									<h4>정보4</h4>
+									<p>
+										내용<br>
+									</p>
+								</div>
+
+								<div class="social-links">
+									<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a
+										href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a
+										href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+									<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-6">
+
+						<div class="form">
+
+							<h4>Send us a email!</h4>
+							<p>제휴 문의 및 고객 센터</p>
+
+							<form action="forms/contact.php" method="post" role="form"
+								class="php-email-form">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control" id="name"
+										placeholder="Your Name" data-rule="minlen:4"
+										data-msg="Please enter at least 4 chars" />
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" name="email"
+										id="email" placeholder="Your Email" data-rule="email"
+										data-msg="Please enter a valid email" />
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" name="subject"
+										id="subject" placeholder="Subject" data-rule="minlen:4"
+										data-msg="Please enter at least 8 chars of subject" />
+									<div class="validate"></div>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="message" rows="5"
+										data-rule="required" data-msg="Please write something for us"
+										placeholder="Message"></textarea>
+									<div class="validate"></div>
+								</div>
+
+								<div class="mb-3">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">Your message has been sent.
+										Thank you!</div>
+								</div>
+
+								<div class="text-center">
+									<button type="submit" title="Send Message">Send
+										Message</button>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="credits">
+				<!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+      -->
+				Designed by 지혜로운 아이들
+			</div>
+		</div>
+	</footer>
+	<!-- End  Footer -->
+
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="./Resources/assets/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="./Resources/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="./Resources/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="./Resources/assets/vendor/php-email-form/validate.js"></script>
+	<script
+		src="./Resources/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="./Resources/assets/vendor/counterup/counterup.min.js"></script>
+	<script src="./Resources/assets/vendor/venobox/venobox.min.js"></script>
+	<script
+		src="./Resources/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="./Resources/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script src="./Resources/assets/vendor/aos/aos.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="./Resources/assets/js/main.js"></script>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
