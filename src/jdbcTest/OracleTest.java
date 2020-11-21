@@ -16,39 +16,28 @@ public class OracleTest {
         try {
             // SQL 문장을 만들고 만약 문장이 질의어(SELECT문)라면
             // 그 결과를 담을 ResulSet 객체를 준비한 후 실행시킨다.
-            String quary = "SELECT * FROM EMP";
+            String quary = "SELECT * FROM CAFE";
             
             conn = DBConnection.getConnection();
             pstm = conn.prepareStatement(quary);
             rs = pstm.executeQuery();
-            
-            /*  EMP 테이블의 데이터 타입
-             * 
-                EMPNO NOT NULL NUMBER(4) -- int
-                ENAME VARCHAR2(10) -- String
-                JOB VARCHAR2(9) -- String
-                MGR NUMBER(4) -- int
-                HIREDATE DATE -- Date
-                SAL NUMBER(7,2) -- float/double
-                COMM NUMBER(7,2) -- float/double
-                DEPTNO NUMBER(2) -- int
-            */
-            
-            System.out.println("EMPNO ENAME JOB MGR HIREDATE SAL COMM DEPTNO");
+             
+            System.out.println("실행된다");
             System.out.println("============================================");
             
             while(rs.next()){
-                int empno = rs.getInt(1);
-                //int empno = rs.getInt("empno"); 숫자 대신 컬럼 이름을 적어도 된다.
-                String ename = rs.getString(2);
-                String job = rs.getString(3);
-                int mgr = rs.getInt(4);
-                java.sql.Date hiredate = rs.getDate(5); // Date 타입 처리
-                int sal = rs.getInt(6);
-                int comm = rs.getInt(7);
-                int deptno = rs.getInt(8);
-                
-                String result = empno+" "+ename+" "+job+" "+mgr+" "+hiredate+" "+sal+" "+comm+" "+deptno;
+//                int empno = rs.getInt(1);
+//                //int empno = rs.getInt("empno"); 숫자 대신 컬럼 이름을 적어도 된다.
+//                String ename = rs.getString(2);
+//                String job = rs.getString(3);
+//                int mgr = rs.getInt(4);
+//                java.sql.Date hiredate = rs.getDate(5); // Date 타입 처리
+//                int sal = rs.getInt(6);
+//                int comm = rs.getInt(7);
+//                int deptno = rs.getInt(8);
+//                
+            	String result = "한개의 row가 있음";
+//                String result = empno+" "+ename+" "+job+" "+mgr+" "+hiredate+" "+sal+" "+comm+" "+deptno;
                 System.out.println(result);
             }
             

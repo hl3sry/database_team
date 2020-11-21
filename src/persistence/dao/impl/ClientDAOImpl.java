@@ -15,7 +15,9 @@ public class ClientDAOImpl implements ClientDAO{
 	private static String query = "SELECT CLIENT.CLIENTID AS CLIENT_ID, " + 
 			"CLIENT.CLIENTNAME AS CLIENT_NAME, " + 
 			"CLIENT.CLIENTPHONE AS CLIENT_PHONE, " +
-			"CLIENT.CLIENTPASSWD AS CLIENT_PASSWD, ";
+			"CLIENT.CLIENTPASSWD AS CLIENT_PASSWD, " +
+			"CLIENT.ADDRGU AS CLIENT_GU, " +
+			"CLIENT.ADDRDONG AS CLIENT_DONG ";
 
 	public ClientDAOImpl() {
 		jdbcUtil = new JDBCUtil();
@@ -38,6 +40,8 @@ public class ClientDAOImpl implements ClientDAO{
 				dto.setClientName(rs.getString("CLIENT_NAME"));
 				dto.setClientPhone(rs.getString("CLIENT_PHONE"));
 				dto.setClientPasswd(rs.getString("CLIENT_PASSWD"));
+				dto.setAddrGu(rs.getString("CLIENT_GO"));
+				dto.setAddrDong(rs.getString("CLIENT_DONG"));
 				list.add(dto);
 			}
 
@@ -54,11 +58,11 @@ public class ClientDAOImpl implements ClientDAO{
 	public int insertClient(ClientDTO client) {
 
 		int result = 0;
-		String insertQuery = "INSERT INTO CLIENT (CLIENT_ID, CLIENT_NAME, CLIENT_PHONE, CLIENT_PASSWD) " +
-				"VALUES (?, ?, ?, ?) ";
+		String insertQuery = "INSERT INTO CLIENT (CLIENT_ID, CLIENT_NAME, CLIENT_PHONE, CLIENT_PASSWD, CLIENT_GU, CLIENT_DONG) " +
+				"VALUES (?, ?, ?, ?, ?, ?) ";
 
 		Object[] param = new Object[] {client.getClientId(), client.getClientName(),
-				client.getClientPhone(), client.getClientPasswd()};
+				client.getClientPhone(), client.getClientPasswd(), client.getAddrGu(), client.getAddrDong()};
 		jdbcUtil.setSql(insertQuery);
 		jdbcUtil.setParameters(param);
 
@@ -99,6 +103,14 @@ public class ClientDAOImpl implements ClientDAO{
 		if (client.getClientPasswd() != null) {	//비밀번호가 설정되어 있는 경우
 			updateQuery += "CLIENT_PASSWD = ?, ";
 			tempParam[index++] = client.getClientPasswd();
+		}
+		if (client.getAddrGu() != null) {	//주소_구가 설정되어 있는 경우
+			updateQuery += "CLIENT_GU = ?, ";
+			tempParam[index++] = client.getAddrGu();
+		}
+		if (client.getAddrDong() != null) {	//주소_동이 설정되어 있는 경우
+			updateQuery += "CLIENT_DONG = ?, ";
+			tempParam[index++] = client.getAddrDong();
 		}
 		
 		updateQuery += "WHERE CLIENT_ID = ? ";
@@ -172,6 +184,8 @@ public class ClientDAOImpl implements ClientDAO{
 				client.setClientName(rs.getString("CLIENT_NAME"));
 				client.setClientPhone(rs.getString("CLIENT_PASSWD"));
 				client.setClientPasswd(rs.getString("CLIENT_PHONE"));
+				client.setAddrGu(rs.getString("CLIENT_GU"));
+				client.setAddrDong(rs.getString("CLIENT_DONG"));
 			}
 			return client;
 			

@@ -84,7 +84,7 @@ public class CafeSpecificsDAOImpl implements CafeSpecificsDAO{
 	}
 
 	@Override
-	public Integer updateCafeSpecifics(CafeSpecificsDTO spec) {
+	public int updateCafeSpecifics(CafeSpecificsDTO spec) {
 		
 		String updateQuery = "UPDATE CAFESPECIFICS SET ";
 		int index = 0;
@@ -130,7 +130,7 @@ public class CafeSpecificsDAOImpl implements CafeSpecificsDAO{
 	}
 
 	@Override
-	public Integer deleteCafeSpecifics(String cafeCode) {
+	public int deleteCafeSpecifics(String cafeCode) {
 		
 		String deleteQuery = "DELETE FROM CAFESPECIFICS WHERE CAFE_CODE = ?";
 		

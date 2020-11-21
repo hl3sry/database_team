@@ -44,8 +44,8 @@ public class JDBCUtil {
 			if (ds == null) { // DBCP 설정
 				BasicDataSource bds = new BasicDataSource();
 				bds.setDriverClassName("oracle.jdbc.driver.OracleDriver"); // Oracle 용 JDBC Driver 클래스
-				bds.setUsername("dbp"); // DB 접속용 ID
-				bds.setPassword("dbp"); // DB 접속용 패스워드
+				bds.setUsername("dbprog0103"); // DB 접속용 ID
+				bds.setPassword("dbprog0103"); // DB 접속용 패스워드
 				bds.setUrl("jdbc:oracle:thin:@202.20.119.117:1521:orcl"); // DBMS 서버 주소
 				ds = bds;
 				// Context init = new InitialContext();
