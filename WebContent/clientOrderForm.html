@@ -250,16 +250,6 @@ a:hover, a:active, a:focus {
 	overflow: hidden;
 }
 
-.contents {
-	float: left;
-	width: 65%;
-}
-
-.nav {
-	float: right;
-	width: 28%;
-	margin-left: 50px;
-}
 
 td {
 	padding: 5px;
@@ -292,20 +282,6 @@ td {
 	border: 1px solid #f89d00;
 }
 
-.cafe_menu_card_contents {
-	display: flex;
-	flex-wrap: no-wrap;
-	overflow-x: scroll;
-	overflow-y: hidden;
-}
-
-.cafe_menu_card_item {
-	width: 200px;
-	height: 250px;
-	padding-right: 20px;
-	flex: 0 0 auto;
-}
-
 .cafe_menu_list {
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -333,36 +309,6 @@ td {
 .cafe_menu_list_item_info {
 	vertical-align: middle;
 	padding: 10px;
-}
-
-.cafe_shopcart {
-	width: 100%;
-}
-
-.cafe_shopcart_contents {
-	padding-top: 15px;
-	margin-bottom: 20px;
-	border-top: 1px solid lightgray;
-	border-bottom: 1px solid lightgray;
-	height: 270px;
-	flex-wrap: no-wrap;
-	overflow-x: hidden;
-	overflow-y: scroll;
-}
-
-.cafe_shopcart_item {
-	margin-bottom: 20px;
-}
-
-p.cafe_shopcart_cost {
-	color: gray;
-	display: inline;
-	margin-left: 5px;
-	margin-right: 10px;
-}
-
-.total_cost {
-	width: 68%;
 }
 
 .btn_order {
@@ -483,57 +429,7 @@ p.cafe_shopcart_cost {
 		</header>
 
 		<div class="contents">
-			<!-- 메뉴 나타내기(카드형태로_인기순 정렬) -->
-			<div class="cafe_menu_card">
-				<h1 class="display-7">menu(인기순)</h1>
-
-				<div class="cafe_menu_card_contents">
-
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-					<div class="cafe_menu_card_item">
-						<img class="card-img-top" src="http://placehold.it/500x325" alt="">
-						<h4 class="card-title">메뉴 이름</h4>
-						<p class="card-text">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn btn-primary">담기</a>
-					</div>
-
-				</div>
-			</div>
+		
 
 			<!-- 메뉴 나타내기(리스트뷰형태로) -->
 			<div class="cafe_menu_list">
@@ -592,49 +488,9 @@ p.cafe_shopcart_cost {
 
 		</div>
 
-		<!-- 장바구니를 사이드바(sidebar)로 표현 -->
-		<div class="nav">
-			<div class="cafe_shopcart" id="sidebar">
-				<h2>장바구니</h2>
-				<div class="cafe_shopcart_contents">
-					<div class="cafe_shopcart_item">
-						<h5>메뉴 이름</h5>
-						<p class="cafe_shopcart_cost">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn-secondary">&nbsp;X&nbsp;</a>
-					</div>
-					<div class="cafe_shopcart_item">
-						<h5>메뉴 이름</h5>
-						<p class="cafe_shopcart_cost">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn-secondary">&nbsp;X&nbsp;</a>
-					</div>
-					<div class="cafe_shopcart_item">
-						<h5>메뉴 이름</h5>
-						<p class="cafe_shopcart_cost">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn-secondary">&nbsp;X&nbsp;</a>
-					</div>
-					<div class="cafe_shopcart_item">
-						<h5>메뉴 이름</h5>
-						<p class="cafe_shopcart_cost">메뉴 가격</p>
-						<input type="number" value="1" min="1" max="10" required /> <a
-							href="#" class="btn-secondary">&nbsp;X&nbsp;</a>
-					</div>
-				</div>
-				
-				<!-- 메뉴 전체 가격 표시 -->
-				전체가격 &nbsp; &nbsp; <input type="text" class="total_cost" value="전체가격"
-						readOnly />
-				
-				<!-- 장바구니에서 주문 버튼 -->
-				<input type="button" class="btn_order" value="주문하기" />
-				
-			</div>
-		</div>
+		
 
 	</div>
-	<!-- 여기까지 container임(card형메뉴+list형메뉴+장바구니까지) -->
 
 	</main>
 	<!-- End #main -->
