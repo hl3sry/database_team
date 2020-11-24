@@ -1,9 +1,9 @@
 CREATE TABLE MENU (
 	menuCode NUMBER(4) PRIMARY KEY,
-	menu varchar2(20) NOT NULL,
+	menu varchar2(4000) NOT NULL,
 	price NUMBER(5) NOT NULL,
-	visible NUMBER(1) NOT NULL,
-	famous NUMBER(1) NOT NULL,
+	menuImage varchar2(4000) NULL,
+	menuDescription varchar2(4000) NULL,
 	cafeCode NUMBER(4) REFERENCES CAFE(cafeCode)
 );
 CREATE TABLE ORDER (
